@@ -1,0 +1,36 @@
+---------------------- Commands for starting and checking DHCP ---------------------------------------
+ sudo systemctl stop isc-dhcp-server - not my favorite way of stopping/starting
+
+sudo service isc-dhcp-server restart - these commands seem better for stopping and starting
+
+    sudo service isc-dhcp-server start
+    sudo service isc-dhcp-server stop
+
+Verifying.. Inorder to check the leases of the IP addresses assigned by the DHCP
+
+     cd /var/lib/dhcp/
+     ls -l
+     cat dhcpd.leases
+
+-----------------Files to configure networking and DHCP -------------------------
+The ISC-DHCP server configuration file is dhcpd.conf and can be accessed using the following command
+
+    sudo nano /etc/dhcp/dhcpd.conf
+
+
+sudo nano /etc/default/isc-dhcp-server
+
+test dhcpd.conf
+
+dhcpd -t
+
+--------------------------- network checking commands --------------------------
+route command shows default routes
+ip route - also shows route information
+
+
+Remove route information 
+sudo route delete default gw IP Address Adapter
+
+Check wifi:
+sudo iwlist wlan0 scan | egrep "Cell|ESSID|Signal|Rates"
