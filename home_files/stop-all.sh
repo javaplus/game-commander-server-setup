@@ -1,1 +1,3 @@
-ansible all -s -m shell -a 'halt' 
+#!/bin/sh
+./getPiIPs.sh > /etc/ansible/hosts
+ansible all --become -m shell -a 'halt'
