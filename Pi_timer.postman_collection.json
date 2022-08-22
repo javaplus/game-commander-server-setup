@@ -1,0 +1,120 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Pi_timer",
+		"_postman_id": "0305b21e-8ab6-f6e1-2213-65e382667505",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "start timer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"123\", \"minutes\":\"3\"}"
+				},
+				"url": "{{url}}:5000/timer",
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "talkingInterval",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"minutes\":\"5\",\n  \"speaktime\":[{\"time\":\"4:55\", \"say\":\"Make your plans ready.  Make your plans ready\", \"parms\": \"-s 180\"},{\"time\":\"4:30\", \"say\":\"Test Fire, Test Fire, Test Fire\", \"parms\": \"-s 180\"},{\"time\":\"4:10\", \"say\":\"10,  9, 8, 7, 6, 5, 4, 3, 2, 1\", \"parms\": \"-s 180\"},{\"time\":\"4\", \"say\":\"GO GO GO, GO GO GO, GO GO GO GO GO\" , \"parms\": \"-s 180\"},{\"time\":\"3\", \"say\":\"3 minutes remaining, 3 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"2\", \"say\":\"2 minutes remaining, 2 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"1\",\"say\":\"1 minute remaining, 1 minute\", \"parms\": \"-s 180\"},{\"time\":\"0:10\",\"say\":\"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, STOP, STOP, STOP, ,, STOP, STOP, STOP\", \"parms\": \"-s 180\"}],\n  \"speakinterval\":[{\"interval\":\"5\", \"say\":\"%min% Minutes Remaining, %min% Minutes.\"}]\n}  "
+				},
+				"url": "{{url}}:5000/timer",
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "voicetesting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"minutes\":\"5\",\n  \"speaktime\":[{\"time\":\"4:50\", \"say\":\"10,  9, 8, 7, 6, 5, 4, 3, 2, 1, Go GO\", \"parms\": \"-s 110\"},{\"time\":\"4:40\", \"say\":\"GO GO GO, GO GO GO, GO GO GO GO GO\" , \"parms\": \"-s 180\"},{\"time\":\"3\", \"say\":\"3 minutes remaining, 3 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"2\", \"say\":\"2 minutes remaining, 2 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"1\",\"say\":\"1 minute remaining, 1 minute\", \"parms\": \"-s 180\"},{\"time\":\"0:10\",\"say\":\"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, STOP, STOP, STOP, ,, STOP, STOP, STOP\", \"parms\": \"-s 180\"}],\n  \"speakinterval\":[{\"interval\":\"5\", \"say\":\"%min% Minutes Remaining, %min% Minutes.\"}]\n}  "
+				},
+				"url": "{{url}}:5000/timer",
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "25MinuteGame",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"minutes\":\"28\",\n  \"speaktime\":[{\"time\":\"27:00\", \"say\":\"Make your plans ready.  Make your plans ready\", \"parms\": \"-s 160\"},{\"time\":\"26:00\", \"say\":\"Test Fire, Test Fire, Test Fire\", \"parms\": \"-s 160\"},{\"time\":\"25:10\", \"say\":\"10,  9, 8, 7, 6, 5, 4, 3, 2, 1, GO GO\", \"parms\": \"-s 110\"},{\"time\":\"25:00\", \"say\":\"GO GO GO, GO GO GO, GO GO GO GO GO\" , \"parms\": \"-s 180\"},{\"time\":\"20\", \"say\":\"20 minutes remaining, 20 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"15\", \"say\":\"15 minutes remaining, 15 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"10\", \"say\":\"10 minutes remaining, 10 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"5\", \"say\":\"5 minutes remaining, 5 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"1\",\"say\":\"1 minute remaining, 1 minute\", \"parms\": \"-s 180\"},{\"time\":\"0:10\",\"say\":\"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, STOP, STOP, STOP, ,, STOP, STOP, STOP\", \"parms\": \"-s 110\"}],\n  \"speakinterval\":[{\"interval\":\"5\", \"say\":\"%min% Minutes Remaining, %min% Minutes.\"}]\n}  "
+				},
+				"url": "{{url}}:5000/timer",
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Zombie",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"minutes\":\"28\",\n  \"speaktime\":[{\"time\":\"27:00\", \"say\":\"Make your plans ready.  Make your plans ready\", \"parms\": \"-s 160\"},{\"time\":\"26:00\", \"say\":\"Test Fire, Test Fire, Test Fire\", \"parms\": \"-s 160\"},{\"time\":\"25:10\", \"say\":\"10,  9, 8, 7, 6, 5, 4, 3, 2, 1, GO GO\", \"parms\": \"-s 110\"},{\"time\":\"25:00\", \"say\":\"GO GO GO, GO GO GO, GO GO GO GO GO\" , \"parms\": \"-s 180\"},{\"time\":\"20\", \"say\":\"20 minutes remaining, 20 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"15\", \"say\":\"15 minutes remaining, 15 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"10\", \"say\":\"10 minutes remaining, 10 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"5\", \"say\":\"5 minutes remaining, 5 minutes\", \"parms\": \"-s 180\"}, {\"time\":\"1\",\"say\":\"1 minute remaining, 1 minute\", \"parms\": \"-s 180\"},{\"time\":\"0:10\",\"say\":\"10, 9, 8, 7, 6, 5, 4, 3, 2, 1, STOP, STOP, STOP, ,, STOP, STOP, STOP\", \"parms\": \"-s 110\"}],\n  \"speakinterval\":[{\"interval\":\"5\", \"say\":\"%min% Minutes Remaining, %min% Minutes.\"}]\n}  "
+				},
+				"url": "{{url}}:5000/timer",
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "stop timer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "localhost:5000/stop",
+				"description": null
+			},
+			"response": []
+		}
+	]
+}

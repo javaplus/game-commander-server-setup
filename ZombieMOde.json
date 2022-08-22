@@ -1,0 +1,61 @@
+{
+    "minutes": "14",
+    "speaktime": [
+        {
+            "time": "13:55",
+            "say": "Survivors, Unite. Survivors, Unite.. Survivors, make your way to spawn.",
+            "parms": "-s 150"
+        },
+        {
+            "time": "13:00",
+            "say": "3 minutes till start. 3 minutes till start.  Make your plans ready",
+            "parms": "-s 150"
+        },
+        {
+            "time": "11:30",
+            "say": "Test Fire, Test Fire, Test Fire",
+            "parms": "-s 160"
+        },
+        {
+            "time": "10:30",
+            "say": "Prepare to start, Prepare to start",
+            "parms": "-s 160"
+        },
+        {
+            "time": "10:10",
+            "say": "10,  9, 8, 7, 6, 5, 4, 3, 2, 1, GO GO",
+            "parms": "-s 110"
+        },
+        {
+            "time": "10:00",
+            "say": "GO GO GO, GO GO GO, GO GO GO GO GO",
+            "parms": "-s 180"
+        },
+        {
+            "time": "7",
+            "say": "7 minutes remaining, 7 minutes",
+            "parms": "-s 160"
+        },
+        {
+            "time": "4",
+            "say": "4 minutes remaining, 4 minutes",
+            "parms": "-s 160"
+        },
+        {
+            "time": "1",
+            "say": "1 minute remaining, 1 minute",
+            "parms": "-s 160"
+        },
+        {
+            "time": "00:10",
+            "say": "10, 9, 8, 7, 6, 5, 4, 3, 2, 1, STOP, STOP, STOP, ,, STOP, STOP, STOP",
+            "parms": "-s 110"
+        }
+    ],
+    "speakinterval": [
+        {
+            "interval": "5",
+            "say": "%min% Minutes Remaining, %min% Minutes."
+        }
+    ]
+}
